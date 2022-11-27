@@ -87,7 +87,7 @@ jobs:
     condition: and(succeededOrFailed(), eq(variables['PUBLISHRESULTS'], 'true'))
 
   # Generate Code Coverage report
-  - task: Palmmedia.reportgenerator.reportgenerator-build-release-task.reportgenerator@4
+  - task: Palmmedia.reportgenerator.reportgenerator-build-release-task.reportgenerator@5
     displayName: 'Code coverage report generator'
     inputs:
       reports: 'reports/pester-coverage.xml'
